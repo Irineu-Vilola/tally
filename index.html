@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>ULOAX</title>
+<title>Tally travel</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -19,6 +19,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- Responsive-->
 <link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/animation.css">
 <!-- fevicon -->
 
 <!-- Scrollbar Custom CSS -->
@@ -34,34 +36,74 @@
 </head>
 <body>
 
+   <!-- Preloader -->
+   <div id="preloader"></div>
+  <header class="position-fixed py-3" >
 
-  <header class="position-fixed w-100">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-between col-xl-11 m-auto">
-        <div class="log d-flex align-items-center gap-3">
-          <h1>Logo</h1>
+    <div class="container-fluid col-11 m-auto">
 
-          <nav class="">
-            <ul class="d-flex align-items-center gap-3">
-              <li class="nav-item"><a href="#">Home</a></li>
-              <li class="nav-item"><a href="#"></a>Serviços</li>
-              <li class="nav-item"><a href="#"></a>Contactos</li>
-              
-  
-            </ul>
-          </nav>
+        <div class="d-flex justify-content-between align-items-center">
+
+          <div class=" d-flex align-items-center gap-2">
+            <div>
+              <h1>logo</h1>
+            </div>
+            
+              <div onclick="animarMenu()"  class="hamburguer" id="btn-menu">
+          
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+              </div>
+
+            
+          
+          </div>
+        
+          <ul  class=" menu" >
+              <li><a href="#hero"><i class="bi bi-house-fill"></i>Home</a></li>
+              <li><i class="bi bi-telephone-fill"></i><a href="#servicos">Serviços</a></li>
+              <li><i class="bi bi-server"></i><a href="#">Produtos</a></li>
+              <li><i class="bi bi-person-vcard"></i><a href="#">Sobre</a></li>
+          </ul>
+          
+                    
+                  
+          
+          <div class="d-flex gap-2">
+          
+          <a class="btn-header btn-sm open-modal" data-modal="modal-1" href="#">Login</a>
+
+          <!-- Example single danger button -->
+        <div class="btn-group">
+          <button type="button" class="btn-sm btn-header-registrar  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Registrar-se
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Motorista</a></li>
+            <li><a class="dropdown-item" href="#">Utilizador</a></li>
+          </ul>
         </div>
-        <div class="d-flex align-items-center gap-3">
-
-          <li class="btn btn-primary btn-sm"><a href="#"></a>Sign up</li>
-          <li class="btn btn-primary btn-sm"><a href="#"></a>Logim</li>
 
         </div>
-       
-      </div>
-
     </div>
-  </header>
+</header>
+
+<div class="menu-mobile position-fixed" id="menu-mobile">
+  <ul>
+    <div class="menu-titulo"><h3>Menu</h3></div>
+  
+  
+      <li><i class="bi bi-house-fill"></i><a href="#"></i>Home</a></li>
+      <li><i class="bi bi-telephone-fill"></i><a href="#">Contactos</a></li>
+      <li><i class="bi bi-server"></i><a href="#">Produtos</a></li>
+      <li><i class="bi bi-person-vcard"></i><a href="#">Sobre</a></li>
+      <hr>
+      <div class="menu-email">
+        <p>horizon@gmai.com</p>
+      </div>
+  </ul>          
+</div>
 	
     <!-- header section end -->
     <!-- banner section start -->
@@ -339,8 +381,11 @@
 
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.minv4.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
     <!-- sidebar -->
