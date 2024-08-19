@@ -301,9 +301,8 @@ header{
 }
 .call_text{
      width: 100%;
-     float: left;
-     font-size: 40px;
-     color: var(--font-color);
+     font-size: 1.3em;
+     color: white;
      text-align: center;
 }
 
