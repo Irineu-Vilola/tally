@@ -46,7 +46,7 @@
 
           <div class=" d-flex align-items-center gap-2">
             <div>
-              <h1 class="">logo</h1>
+              <img src="images/logo/logo.png" alt="">
             </div>
             
               <div onclick="animarMenu()"  class="hamburguer" id="btn-menu">
@@ -80,8 +80,8 @@
             Registrar
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Motorista</a></li>
-            <li><a class="dropdown-item" href="#">Utilizador</a></li>
+            <li><i class="bi bi-car-front-fill"></i><a class="dropdown-item"  href="#">Motorista</a></li>
+            <li><i class="bi bi-person-fill"></i><a class="dropdown-item" href="#">Utilizador</a></li>
           </ul>
         </div>
 
@@ -134,7 +134,7 @@
                   <input type="text" class="email-bt" placeholder="DESTINO" name="destino">
                 </div>
                 <div class="form-group mb-3">
-                  <div class="send_bt"><a href="#">PEDIR</a></div>
+                  <div class="send_bt"><a href="#">RESERVAR</a></div>
                 </div>
                   </form>
                   </div> 
@@ -158,7 +158,7 @@
             <div class="contact_bg">
             <div class="input_main">
               <div class="container">
-                <h2 class="request_text">Dá-nos a tua localização</h2>
+                <h2 class="request_text">Faça já a sua reserva</h2>
                 <form action="/action_page.php">
                 <div class="form-group mb-3">
                   <input type="text" class="email-bt" placeholder="PICKUP" name="Name">
@@ -172,7 +172,7 @@
                   </form>
                   </div> 
                   </div>
-                <div class="send_bt"><a href="#">Pedir</a></div>
+                <div class="send_bt"><a href="#">RESERVAR</a></div>
           </div>
           </div>
         </div>
@@ -191,30 +191,28 @@
             <div class="contact_bg">
             <div class="input_main">
               <div class="container">
-                <h2 class="request_text">Your everyday travel partner</h2>
+                <h2 class="request_text">Faça já a sua reserva</h2>
                 <form action="/action_page.php">
                 <div class="form-group  mb-3">
-                  <input type="text" class="email-bt" placeholder="PICKUP" name="Name">
+                  <input type="text" class="email-bt" placeholder="SUA LOCALIZAÇÃO" name="Name">
                 </div>
                 <div class="form-group  mb-3">
-                  <input type="text" class="email-bt" placeholder="DROP" name="Email">
+                  <input type="text" class="email-bt" placeholder="DESTINO" name="Email">
                 </div>
-                <div class="form-group  mb-3">
-                  <input type="text" class="email-bt" placeholder="WHEN" name="Email">
-                </div>
+                
                   </form>
                   </div> 
                   </div>
-                <div class="send_bt"><a href="#">Pedir</a></div>
+                <div class="send_bt"><a href="#">RESERVAR</a></div>
           </div>
           </div>
         </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev" style="background-color:#fffcf4;">
     <i class="fa fa-angle-left"></i></a>
   </a>
-  <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next" style="background-color:#fffcf4;">
     <i class="fa fa-angle-right"></i>
   </a>
   </a>
@@ -223,7 +221,7 @@
       </div>
     </div>
     <!-- banner section end -->
-    <!-- our taxis section start -->
+    <!--======SERVISOS====-->
     <div id="taxis" class="taxis_section layout_padding">
       <div class="container">
         <h1 class="our_text">Nossos<span style="color: orange;"> Serviços</span></h1>
@@ -232,27 +230,36 @@
             <div class="col-sm-4">
               <div class="taxi_main">
                 <div class="round_1">01</div>
-                <h2 class="carol_text">Serviço-1</h2>
+                <h2 class="carol_text">Envio de Cargas</h2>
                 <p class="reader_text">Lorem ipsum dolor sit amet consectetur ad Lorem ipsum, dolor sit amet consectetur adipisicing elit. Su</p>
-                <div class="images_2"><a href="#"><img src="images/img-2.png"></a></div>
+                <div class="images_2"><a href="#"><img src="images/servicos/Agendamento-removebg-preview.png"></a></div>
+                <div class="">
+                  <a href="forms/cargas.html"><button class=" mt-2 btn btn-primary">Agendar Envio de Cargas</button></a>
+                </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="taxi_main">
                 <div class="round_1">02</div>
-                <h2 class="carol_text">Serviço-2</h2>
+                <h2 class="carol_text">Agendamento de Viagens</h2>
                 <p class="reader_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime quam reiciendis<br> 
                 distracted </p>
-                <div class="images_2"><img src="images/img-2.png"></a></div>
+                <div class="images_2"><img src="images/servicos/Agendamento-removebg-preview.png"></a></div>
+                <div class="">
+                  <button class=" btn btn-primary">Agendar</button>
+                </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="taxi_main">
                 <div class="round_1">03</div>
-                <h2 class="carol_text">Serviço-3</h2>
+                <h2 class="carol_text">Agendamento de Linhas curtas</h2>
                 <p class="reader_text">act that a reader will be aumentando lá mais um pouco<br> 
                 distracted </p>
-                <div class="images_2"><img src="images/img-2.png"></a></div>
+                <div class="images_2"><img src="images/servicos/Agendamento-removebg-preview.png"></a></div>
+                <div class="">
+                  <a href="#"><button class=" btn btn-primary">Agendar</button></a>
+                </div>
               </div>
             </div>
           </div>
@@ -260,11 +267,11 @@
       </div>
     </div>
     <!-- our taxis section end -->
-    <!-- why ride section start -->
+    <!--======Por quê a Tally-Travel====-->
     <div id="booking" class="ride_section layout_padding">
       <div class="container">
         <div class="ride_main">
-          <h1 class="ride_text">Por quê viajar <span style="color: #f4db31;">com Tally travel</span></h1>
+          <h1 class="ride_text">Por quê viajar <span style="color:coral;">com Tally Travel</span></h1>
       </div>
         </div>
     </div>
@@ -277,7 +284,7 @@
           <div class="col-sm-8">
             <h1 class="cabe_text">Tally-travel</h1>
             <p class="long_text">Porque somos responsavies e Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus numquam facere vero, laudantium corporis veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, repudiandae a at nemo numquam animi ipsam eum temporibus odit dolor quas repellat accusamus, reiciendis dolorum est praesentium? Asperiores, quo officia.</p>
-            <div class="book_bt"><a href="#">Saiba Mais</a></div>
+            <div class="btn btn-header-registrar"><a href="conteudo/sobre.html">Saiba Mais</a></div>
           </div>
         </div>
       </div>
@@ -286,7 +293,7 @@
           <div class="col-sm-8">
             <h1 class="secure_text">Segurança e Responsabilidade</h1>
             <p class="long_text_2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as It is a long established fact that a reader will be distracted by the readable c</p>
-            <div class="book_bt_2"><a href="#">Saiba Mais</a></div>
+            <div class="btn btn-header-registrar"><a href="conteudo/sobre.html">Saiba Mais</a></div>
           </div>
           <div class="col-sm-4">
             <div class="image_3"><img src="images/img-4.png"></div>
@@ -301,7 +308,7 @@
           <div class="col-sm-8">
             <h1 class="cabe_text">Conforto e pontualidade</h1>
             <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as It is a long established fact that a reader will be distracted by the readable c</p>
-            <div class="book_bt"><a href="#">Saiba Mais</a></div>
+            <div class="btn btn-header-registrar"><a href="conteudo/sobre.html">Saiba Mais</a></div>
           </div>
         </div>
       </div>
@@ -310,7 +317,7 @@
           <div class="col-sm-8">
             <h1 class="secure_text">Transparencia e Dinamismo</h1>
             <p class="long_text_2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as It is a long established fact that a reader will be distracted by the readable c</p>
-            <div class="book_bt_2"><a href="#">Saiba Mais</a></div>
+            <div class="btn btn-header-registrar"><a href="#">Saiba Mais</a></div>
           </div>
           <div class="col-sm-4">
             <div class="image_3"><img src="images/img-5.png"></div>
@@ -337,41 +344,43 @@
     </div>
     <!-- download section end -->
   <!-- section footer start -->
-    <div class="section_footer ">
-      <div class="container"> 
-          <div class="footer_section_2">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h2 class="account_text">Address</h2>
-                  <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h2 class="account_text">Links</h2>
-                  <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Home</span></a></div>
-                <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">About</span></a></div>
-                <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Taxi</span></a></div>
-                <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Booking</span></a></div>
-                <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Contact Us</span></a></div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Follow Us</h2>
-                <div class="image-icon"><img src="images/fb-icon.png"><span class="fb_text"><a href="#">Facebook</a></span></div>
-                <div class="image-icon"><img src="images/twitter-icon.png"><span class="fb_text"><a href="#">Twitter</a></span></div>
-                <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div>
-                <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>            
-                <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
-                </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <h2 class="adderess_text">Newsletter</h2>
-            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
-            <button class="subscribr_bt">SUBSCRIBE</button>
-          </div>
-          </div>
-          </div>
-          </div>
+    <footer>
+      <div class="section_footer ">
+        <div class="container">
+            <div class="footer_section_2">
+              <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h2 class="account_text">Address</h2>
+                    <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h2 class="account_text">Links</h2>
+                    <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Home</span></a></div>
+                  <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">About</span></a></div>
+                  <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Taxi</span></a></div>
+                  <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Booking</span></a></div>
+                  <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Contact Us</span></a></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h2 class="account_text">Follow Us</h2>
+                  <div class="image-icon"><img src="images/fb-icon.png"><span class="fb_text"><a href="#">Facebook</a></span></div>
+                  <div class="image-icon"><img src="images/twitter-icon.png"><span class="fb_text"><a href="#">Twitter</a></span></div>
+                  <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div>
+                  <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>
+                  <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
+                  </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <h2 class="adderess_text">Newsletter</h2>
+              <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
+              <button class="subscribr_bt">SUBSCRIBE</button>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
       </div>
-    </div>
-  <!-- section footer end -->
+        <!-- section footer end -->
+    </footer>
   <!-- copyright section start -->
   <div class="copyright_section">
     <div class="container">

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Cargas - Tally Travel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+            text-align: left;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Envio de Cargas</h1>
+        <form id="envioCargasForm">
+            <label for="nomeProprietario">Nome do Proprietário:</label>
+            <input type="text" id="nomeProprietario" name="nomeProprietario" placeholder="Nome completo do proprietário" required>
+
+            <label for="tipoCarga">Tipo de Carga:</label>
+            <select id="tipoCarga" name="tipoCarga" required>
+                <option value="mala">Mala</option>
+                <option value="caixa">Caixa</option>
+                <option value="encomenda">Encomenda</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="dataRecepcao">Data de Receção:</label>
+            <input type="date" id="dataRecepcao" name="dataRecepcao" required>
+
+            <label for="dataEntrega">Data de Entrega Estimada:</label>
+            <input type="date" id="dataEntrega" name="dataEntrega" required>
+
+            <label for="peso">Peso da Carga (em quilogramas):</label>
+            <input type="number" id="peso" name="peso" min="0" required>
+
+            <label for="origem">Origem da Carga:</label>
+            <input type="text" id="origem" name="origem" placeholder="Local de onde a carga foi recebida" required>
+
+            <label for="destino">Destino da Carga:</label>
+            <input type="text" id="destino" name="destino" placeholder="Local para onde a carga será enviada" required>
+
+            <label for="nomeReceptor">Nome do Receptor (se aplicável):</label>
+            <input type="text" id="nomeReceptor" name="nomeReceptor" placeholder="Nome completo do receptor (caso seja uma encomenda)">
+
+            <label for="detalhesCarga">Detalhes da Carga:</label>
+            <input type="text" id="detalhesCarga" name="detalhesCarga" placeholder="Informações adicionais da carga">
+
+            <div class="button-container">
+                <button type="button" class="button" onclick="calcularPreco()">Calcular Preço</button>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="button">Confirmar </button>
+            </div>
+
+            <p class="resultado" id="resultado"></p>
+        </form>
+    </div>
+
+    <script>
+        function calcularPreco() {
+            const peso = document.getElementById('peso').value;
+            const precoPorQuilo = 1000; // 1000 kwanzas por quilograma
+            const precoTotal = peso * precoPorQuilo;
+
+            document.getElementById('resultado').textContent = `Preço estimado: ${precoTotal} kwanzas`;
+        }
+    </script>
+</body>
+</html>
