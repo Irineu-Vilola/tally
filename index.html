@@ -45,9 +45,7 @@
         <div class="d-flex justify-content-between align-items-center">
 
           <div class=" d-flex align-items-center gap-2">
-            <div>
-              <img src="images/logo/logo.png" alt="">
-            </div>
+           
             
               <div onclick="animarMenu()"  class="hamburguer" id="btn-menu">
           
@@ -80,8 +78,8 @@
             Registrar
           </button>
           <ul class="dropdown-menu">
-            <li><i class="bi bi-car-front-fill"></i><a class="dropdown-item"  href="#">Motorista</a></li>
-            <li><i class="bi bi-person-fill"></i><a class="dropdown-item" href="#">Utilizador</a></li>
+            <li><i class="bi bi-car-front-fill"></i><a class="dropdown-item"  href="forms/cadastro_motorista.html">Motorista</a></li>
+            <li><i class="bi bi-person-fill"></i><a class="dropdown-item" href="forms/cadastro.html">Utilizador</a></li>
           </ul>
         </div>
 
@@ -126,14 +124,17 @@
             <div class="input_main">
               <div class="container">
                 <h2 class="request_text">Faça já a sua reserva</h2>
-                <form action="#">
-                <div class="form-group mb-3">
+                <form class="row col-12 gap-3" action="#">
+                <div class="form-group">
+                  <input type="date" class="email-bt" placeholder="DATA DA VIAGEM" name="date">
+                </div>
+                <div class="form-group">
                   <input type="text" class="email-bt" placeholder="TUA LOCALIZAÇÃO ?" name="name">
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group">
                   <input type="text" class="email-bt" placeholder="DESTINO" name="destino">
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group">
                   <div class="send_bt"><a href="#">RESERVAR</a></div>
                 </div>
                   </form>
@@ -232,7 +233,7 @@
                 <p class="reader_text">Lorem ipsum dolor sit amet consectetur ad Lorem ipsum, dolor sit amet consectetur adipisicing elit. Su</p>
                 <div class="images_2"><a href="#"><img src="images/servicos/Agendamento-removebg-preview.png"></a></div>
                 <div class="">
-                  <a href="forms/cargas.html"><button class=" mt-2 btn btn-primary">Agendar</button></a>
+                  <a href="forms/cargas.html"><button class=" mt-2 btn btn-primary">Enviar Cargar</button></a>
                 </div>
               </div>
             </div>
@@ -244,7 +245,7 @@
                 distracted </p>
                 <div class="images_2"><img src="images/servicos/Agendamento-removebg-preview.png"></a></div>
                 <div class="">
-                  <button class=" btn btn-primary">Agendar</button>
+                  <a href="forms/agendamento.html"><button class=" btn btn-primary">Agendar Viagem</button></a>
                 </div>
               </div>
             </div>

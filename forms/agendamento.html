@@ -3,123 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animation.css">
     <title>Agendamento de Viagem - Tally Travel</title>
     <style>
+
+        
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        body{
+          color: white;
+            background-image: url('../images/bg-form.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            
+        }
+        .capa{
+            background-color: rgba(0, 0, 0, 0.416);
             height: 100vh;
-        }
-
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            font-weight: bold;
-            margin-bottom: 8px;
-            color: #555;
-            text-align: left;
-        }
-
-        input[type="text"],
-        input[type="date"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .button-container {
+            width: 100vw;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+        }
+        option{
+            color: black;
+        }
+      
+        form{
+            display: flex;
+            justify-content: center;
         }
 
-        .button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 12px 24px;
-            cursor: pointer;
-            border-radius: 4px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Agendamento de Viagem</h1>
-        <form id="agendamentoForm">
-            <label for="data">Data da Viagem:</label>
-            <input type="date" id="data" name="data" required>
-            
-            <label for="origem">Origem:</label>
-            <input type="text" id="origem" name="origem" placeholder="Local de partida" required>
 
-            <label for="destino">Destino:</label>
-            <input type="text" id="destino" name="destino" placeholder="Local de chegada" required>
+      <!-- Preloader -->
+   <div id="preloader"></div>
+   
 
-            <label for="tipoViagem">Tipo de Viagem:</label>
-            <select id="tipoViagem" name="tipoViagem" required>
-                <option value="inter-provinciais">Viagem Inter-provinciais</option>
-                <option value="turistica">Viagem Turística</option>
-                <option value="outra">Outro tipo de viagem</option>
-            </select>
+   <div class="capa">
+       <div class="container d-flex">
+           
+           <form class="row col-8 m-auto g-4 needs-validation" novalidate>
+               <div class="col-8 d-flex align-items-center justify-content-between" >
+                   <h1>Agendamento de Viagens</h1>
+                   <a href="../index.html">Fechar</a>
+               </div>
 
-            <div class="button-container">
-                <button type="submit" class="button">Agendar</button>
-            </div>
-        </form>
-    </div>
+               <div class="col-md-8">
+                <label for="data_recepcao" class="form-label">Data da Viagem</label>
+                <div class="input-group has-validation">
+                  <input type="date" class="form-control" id="data_recepcao" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Defina uma data de Viagem.
+                  </div>
+                </div>
+              </div>
+               
+               <div class="col-md-8">
+                 <label for="tipo_de_carga" class="form-label">Tua Localizção</label>
+                 <select class="form-select" id="validationCustom04" required>
+                   <option selected disabled value="">...</option>
+                   <option>Malanje</option>
+                   <option>Luanda</option>
+                 </select>
+                 <div class="invalid-feedback">
+                   Selecione a Tua Cidade.
+                 </div>
+               </div>
 
-    <script>
-        document.getElementById('agendamentoForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Aqui você pode adicionar a lógica de agendamento de viagem, por exemplo:
-            const data = document.getElementById('data').value;
-            const origem = document.getElementById('origem').value;
-            const destino = document.getElementById('destino').value;
-            const tipoViagem = document.getElementById('tipoViagem').value;
+               <div class="col-md-8">
+                <label for="tipo_de_carga" class="form-label">Destino</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">...</option>
+                  <option>Malanje</option>
+                  <option>Luanda</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione o teu destino.
+                </div>
+              </div>
 
-            // Exemplo de ação após o agendamento (simulado)
-            alert(`Viagem agendada com sucesso!\nData: ${data}\nOrigem: ${origem}\nDestino: ${destino}\nTipo de Viagem: ${tipoViagem}`);
-            // Redirecionamento para outra página ou ação após o agendamento
-            // Exemplo: window.location.href = 'dashboard.html';
-        });
-    </script>
+              <div class="col-md-8">
+                <label for="tipo_de_carga" class="form-label">Tipo de Viagem</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">...</option>
+                  <option>Ainda não definido</option>
+                  <option>Ainda não definido</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione o teu destino.
+                </div>
+              </div>
+               
+       
+              
+       
+       
+               <div class="col-8">
+                 <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                   <label class="form-check-label" for="invalidCheck">
+                     Agree to terms and conditions
+                   </label>
+                   <div class="invalid-feedback">
+                     You must agree before submitting.
+                   </div>
+                 </div>
+               </div>
+               <div class="col-8">
+                   <button class="btn btn-primary" type="submit">Submit form</button>
+                 </div>
+       
+             </form>
+       </div>
+   </div>
+    <script src="../js/form.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
