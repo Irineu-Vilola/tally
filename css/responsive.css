@@ -1,13 +1,158 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
 
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+  
+
+    header{
+      background-color:aqua;
+    }
+    .menu{
+      display: flex;
+      gap: 10px;
+      
+      
+  
+  }
+    .menu ul{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+    }
+
+    .logo{
+        display: block;
+    }
+  
+    /* ===BOTÂO HAMBURGUER===*/
+  .hamburguer{
+    display: none;
+  }
+  .menu-mobile{
+    display: none;
+  
+  }
+  
+  
+  /* Modal */
+  dialog {
+      
+    border: none;
+    width: 350px;
+    margin: auto;
+    border-radius: 24px;
+    padding: 20px;
+    background-color: #202753;
+  }
+  
+  
+      
+      
+      
+  }
+  
+  @media screen and (min-width:992px) and (max-width:1200px) {
+  
+   
+    header{
+      background-color: blue;
+    }
+  
+    .menu{
+      display: flex;
+      gap: 10px;
+      
+      
+  
+  }
+    .menu ul{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+    }
+    .logo{
+        display: block;
+    }
+      /* ===BOTÂO HAMBURGUER===*/
+  .hamburguer{
+    display: none;
+  }
+  
+  .menu-mobile{
+    display: none;
+  
+  }
+  
+  
+  /* Modal */
+  dialog {
+      
+    border: none;
+    width: 350px;
+    margin: auto;
+    border-radius: 24px;
+    padding: 20px;
+    background-color: #202753;
+  }
+     
+    
+      
+        
+  }
+  
+  
+  /* ===Telas maiores ===*/
+  @media screen and (min-width:1200px) {
+  
+    
+    header{
+      
+    }
+    .menu{
+      display: flex;
+  }
+    .menu ul{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+    }
+      /* ===BOTÂO HAMBURGUER===*/
+  .hamburguer{
+    display: none;
+  }
+  
+  .menu-mobile{
+    display: none;
+  
+  }
+  .logo{
+    display: block;
+}
+  
+ 
+  
+  
+  
+ 
+    
+     
+    
+     
+  }
+  
+
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     
-    .header-search {
-        padding: 15px 0px;
-    }
+   
 }
 
 
