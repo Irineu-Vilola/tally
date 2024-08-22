@@ -20,15 +20,15 @@
 /* Cores globais do site. As alterações das cores fazem-se aqui */
 :root { 
 
-    --link-color: #c6c9e8; /* Cor de fundo da página */
+    --link-color: #D0D5F2; /* Cor de fundo da página */
     --backgraud-color: #dfe1f1; /* Cor para os links*/
     
-    --hero-color: #202753; /* cores de Fundos para sessão hero */
+    --hero-color: #182859; /* cores de Fundos para sessão hero */
     
-    --destaques-color:#f29200; /* cor para relçar as cores do site */
+    --destaques-color:#F28705; /* cor para relçar as cores do site */
     --font-color: #0c0b09; /* cor para as letras e para grafos */ 
 
-    --paragrafo-color: #1f284fb5; /* Cor para os pagrafos e textos longos*/
+    --paragrafo-color: #BF4904; /* Cor para os pagrafos e textos longos*/
     
   }
 
