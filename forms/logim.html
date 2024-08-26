@@ -1,13 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logim</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>Cadastro de Motorista</title>
+    <style>
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        body{
+            background-image: url('../images/bg-form.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            
+        }
+        .capa{
+            background-color: rgba(0, 0, 0, 0.416);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        option{
+            color: black;
+        }
+      
+        form{
+            display: flex;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
 
-    <h1>Tela de logim</h1>
-    
+
+
+      <!-- Preloader -->
+   <div id="preloader"></div>
+   
+
+   <div class="capa">
+       <div class="container d-flex">
+           
+           <form class=" w-75 m-auto gap-5 needs-validation" novalidate>
+               <div class="col-6 d-flex align-items-center justify-content-between" >
+                   <h1>Logim</h1>
+                   <a href="../index.html">Fechar</a>
+               </div>
+               
+
+               <div class="col-sm-6">
+                 <label for="peso" class="form-label">Email</label>
+       
+                 <input type="email" class="form-control" id="peso" name="peso" min="0" placeholder="Email" required>
+                 <div class="invalid-feedback">
+                   Email invalido
+                 </div>
+               </div>
+               
+
+              
+               
+               <div class="col-sm-6">
+                 <label for="peso" class="form-label">Senha</label>
+       
+                 <input type="password" class="form-control" id="peso" name="peso" min="0" placeholder="Senha" required>
+                 <div class="invalid-feedback">
+                   Senha incorrecta.
+                 </div>
+               </div>
+       
+               
+       
+       
+               <div class="col-6">
+                 <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                   <label class="form-check-label" for="invalidCheck">
+                      Esqueceu a palavra passe? <a href="#">clica aqui</a>
+                   </label>
+                   <div class="invalid-feedback">
+                     Você não concordaste com termos da tally travel
+                   </div>
+                 </div>
+               </div>
+               <div class="col-6">
+                  <input class="btn btn-primary form-control" type="submit" value="Entrar">
+                 </div>
+       
+             </form>
+       </div>
+   </div>
+
+  <script src="../js/form.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
