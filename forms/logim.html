@@ -24,7 +24,7 @@
             
         }
         .capa{
-            background-color: rgba(0, 0, 0, 0.416);
+            background-color: rgba(0, 0, 0, 0.666);
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -34,12 +34,47 @@
             color: black;
         }
       
-        form{
+        .form-loim {
+          
+            background-color: rgba(0, 89, 255, 0.092);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+          
             display: flex;
+            width: 350px;
+            padding: 30px 20px;
             justify-content: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        .form-loim div{
+          width: 100%;
+        }
+
+        .entar-btn{
+          display: flex;
+          justify-content: center;
+         
+
+        }
+
+        .form-logim a{
+          text-decoration: none;
+          color: white;
+
+        }
+
+        
+        .usur-img img{
+            display: flex;
+            align-items: center;
+            background-color:white;
+            border-radius: 50%;
+            border: 5PX SOLID rgba(13, 0, 255, 0.718);
+            margin: auto;
+            width: 60px;
+            height: 60px;
         }
 
     </style>
@@ -55,26 +90,34 @@
    <div class="capa">
        <div class="container d-flex">
            
-           <form class=" w-75 m-auto gap-4 needs-validation" novalidate>
-               <div class="col-6 d-flex align-items-center justify-content-between" >
-                   <h1>Logim</h1>
-                   <a href="../index.html">Fechar</a>
-               </div>
+           <form class=" form-loim m-auto gap-3 needs-validation" novalidate>
+            <div class="d-flex align-items-center justify-content-end" >
+              <a href="../index.html">Fechar</a>
+          </div>
+
+             <div class="" >
+                
+
+                 <div class="usur-img"><img src="../images/car.png" alt=""></div>
+                 <div class="d-flex align-items-center justify-content-center">
+                  <h1 class="tex-aline-center">Logim</h1>
+              </div>
+             </div>
                
 
-               <div class="col-sm-6">
+               <div class="">
                  <label for="peso" class="form-label">Email</label>
        
-                 <input type="email" class="form-control" id="peso" name="peso" min="0" placeholder="Email" required>
+                 <input type="email" class="form-control" id="peso" name="peso" placeholder="Email" required>
                  <div class="invalid-feedback">
-                   Email invalido
+                   Email Incorrecto
                  </div>
                </div>
                
 
               
                
-               <div class="col-sm-6">
+               <div >
                  <label for="peso" class="form-label">Senha</label>
        
                  <input type="password" class="form-control" id="peso" name="peso" min="0" placeholder="Senha" required>
@@ -86,20 +129,22 @@
                
        
        
-               <div class="col-6">
-                 <div class="form-check">
-                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                   <label class="form-check-label" for="invalidCheck">
-                      Esqueceu a palavra passe? <a href="#">clica aqui</a>
-                   </label>
-                   <div class="invalid-feedback">
-                     Você não concordaste com termos da tally travel
-                   </div>
-                 </div>
+               <div class="">
+                 
+                      <spam>Esqueceu a palavra passe? <a href="#">clica aqui</a></spam>
+ 
+                
                </div>
-               <div class="col-4">
-                  <input class="btn btn-primary form-control" type="submit" value="Entrar">
-                 </div>
+               <div class="entar-btn" >
+                  <input class="btn btn-primary " type="submit" value="Entrar">
+                </div>
+
+                <div class="d-flex justify-content-center">
+                 
+                  <spam>Se não tem uma conta <a href="#">clica aqui</a></spam>
+
+            
+           </div>
        
              </form>
        </div>

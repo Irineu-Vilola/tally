@@ -1,13 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>Cadastro de Motorista</title>
+    <style>
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        body{
+            background-image: url('../images/bg-form.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            
+        }
+        .capa{
+            background-color: rgba(0, 0, 0, 0.666);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        option{
+            color: black;
+        }
+      
+        .form-loim {
+          
+            background-color: rgba(0, 89, 255, 0.092);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+          
+            display: flex;
+            width: 350px;
+            padding: 30px 20px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-loim div{
+          width: 100%;
+        }
+
+        .entar-btn{
+          display: flex;
+          justify-content: center;
+         
+
+        }
+
+        .form-logim a{
+          text-decoration: none;
+          color: white;
+         
+          
+
+        }
+
+        .usur-img img{
+            display: flex;
+            align-items: center;
+            background-color:white;
+            border-radius: 50%;
+            border: 5PX SOLID rgba(13, 0, 255, 0.718);
+            margin: auto;
+            width: 60px;
+            height: 60px;
+        }
+
+        .usur-img img{
+            
+
+        }
+
+    </style>
 </head>
 <body>
 
-    <h1> Formulário de Cadastro Para Usuários</h1>
-    
+
+
+      <!-- Preloader -->
+   <div id="preloader"></div>
+   
+
+   <div class="capa">
+       <div class="container d-flex">
+           
+           <form class=" form-loim m-auto gap-3 needs-validation" novalidate>
+
+            <div class="d-flex align-items-center justify-content-end" >
+                <a href="../index.html">Fechar</a>
+            </div>
+
+               <div class="" >
+                  
+
+                   <div class="usur-img"><img src="../images/car.png" alt=""></div>
+                   <div class="d-flex align-items-center justify-content-center">
+                    <h1 class="tex-aline-center">Usuário</h1>
+                </div>
+               </div>
+
+
+               <div class="">
+                <label for="peso" class="form-label">Nome de usuário</label>
+      
+                <input type="text" class="form-control" id="peso" name="peso" placeholder="Informe um nome de Usuário" required>
+                <div class="invalid-feedback">
+                  Email Incorrecto
+                </div>
+              </div>
+               
+
+               <div class="">
+                 <label for="peso" class="form-label">Telefone</label>
+       
+                 <input type="tel" class="form-control" id="peso" name="peso" placeholder="+2 44 9xxxxxxx" required>
+                 <div class="invalid-feedback">
+                   Email Incorrecto
+                 </div>
+               </div>
+               
+
+              
+               
+               <div >
+                 <label for="peso" class="form-label">Senha</label>
+       
+                 <input type="password" class="form-control" id="peso" name="peso" min="0" placeholder="Define uma Senha" required>
+                 <div class="invalid-feedback">
+                   Senha incorrecta.
+                 </div>
+               </div>
+
+               <div class="">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Concordar com os nossos termos ?
+                  </label>
+                  <div class="invalid-feedback">
+                    Você não concordaste com termos da tally travel
+                  </div>
+                </div>
+              </div>
+       
+               
+       
+       
+               <div class="">
+                 
+                      <spam>Já está cadastrado?<a href="logim.html">clica aqui</a></spam>
+ 
+                
+               </div>
+               <div class="entar-btn" >
+                  <input class="btn btn-primary " type="submit" value="Cadastrar-se">
+                </div>
+
+                
+       
+             </form>
+       </div>
+   </div>
+
+  <script src="../js/form.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
