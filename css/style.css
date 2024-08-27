@@ -821,6 +821,11 @@ input.email-bt::placeholder {
     background-color:#202753;
 }
 
+#contact h4{
+    color: white;
+    font-size: 1.3em;
+}
+
 .footer_section_2 {
     width: 100%;
     float: left;
@@ -848,7 +853,6 @@ input.email-bt::placeholder {
      float: left;
     font-size: 12pt;
     color: #eceaea;
-    background-color: #ffffff;
     padding: 10px;
     border-radius: 5px;
     border: 0px;
