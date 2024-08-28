@@ -794,14 +794,18 @@ input.email-bt::placeholder {
     padding: 25px 0px;
 }
 
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+  
+  
 }
+
+
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -821,12 +825,12 @@ input.email-bt::placeholder {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #111;
+  
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  
   margin: 0 0 0 45px;
 }
 
@@ -853,11 +857,28 @@ input.email-bt::placeholder {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #fafafc;
+  
   position: relative;
   border-radius: 6px;
   position: relative;
   z-index: 1;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  
+  opacity: 1;
+  border: 1px solid #ffc107;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc107;
 }
 
 
