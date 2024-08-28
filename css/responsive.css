@@ -9,7 +9,7 @@
   
 
     header{
-      background-color:aqua;
+      
     }
     .menu{
       display: flex;
@@ -60,7 +60,7 @@
   
    
     header{
-      background-color: blue;
+      
     }
   
     .menu{
@@ -272,22 +272,7 @@
         top: 0;
     }
 
-.call_text { font-size: 32px; }
-.booking_text { font-size: 17px;}
-.toggle_menu { top: -58px; position: relative; left: 220px; }
-.request_text { font-size: 20px; }
-.send_bt { width: 100%; font-size: 16px; margin-right: 13px; }
-.banner_section { background-size: cover; padding-bottom: 40px; }
-.ride_text { font-size: 30px; }
-.image_3 { margin-top: 20px; }
-.ride_section_2 { padding-top: 40px;} 
-.images_2 { width: 90%; margin: 0 auto; text-align: center; float: initial; }
-.book_bt a { width: 100%; }
 
-.send_bt a:hover { color: #fefefe; padding: 0px; background-color: transparent; } 
-.book_bt a:hover { color: #000; padding: 0px; background: transparent;}
-.book_bt_2 a:hover { color: #000;  background: transparent; padding: 0px; }
-.send_bt a { width: 45%; }
 
 
 
