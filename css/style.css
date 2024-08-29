@@ -7,13 +7,12 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
+
+
+
 @import url(slick.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
+
 
 
 
@@ -54,98 +53,23 @@ body {
      overflow-x: hidden;
 }
 
-a {
-     color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
-}
+
 hr{
 border: 2px solid var(--link-color);
 width: 80%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-     letter-spacing: 0;
-     font-weight: normal;
-     position: relative;
-     padding: 0 0 10px 0;
-     font-weight: normal;
-     line-height: normal;
-     color: #111111;
-     margin: 0;
-}
 
-h1 {
-     font-size: 24px;
-}
 
-h2 {
-     font-size: 22px;
-}
 
-h3 {
-     font-size: 18px;
-}
 
-h4 {
-     font-size: 16px;
-}
-
-h5 {
-     font-size: 14px;
-}
-
-h6 {
-     font-size: 13px;
-}
-
-*,
-*::after,
-*::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-     color: #212121;
-     text-decoration: none!important;
-     opacity: 1;
-}
 
 button:focus {
      outline: none;
 }
 
-ul,
-li,
-ol {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
-}
 
-p {
-     margin: 20px;
-     font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
-}
+
 
 a {
      color:#c6c9e8;
@@ -159,16 +83,7 @@ a:hover{
     color: #f29200;
 }
 
-a,
-.btn {
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
-}
+
 
 img {
      max-width: 100%;
@@ -179,62 +94,8 @@ img {
      outline: 0;
 }
 
-.paddind_bottom_0 {
-     padding-bottom: 0 !important;
-}
-
-.btn-custom {
-     margin-top: 20px;
-     background-color: transparent !important;
-     border: 2px solid #ddd;
-     padding: 12px 40px;
-     font-size: 16px;
-}
-
-.lead {
-     font-size: 18px;
-     line-height: 30px;
-     color: #767676;
-     margin: 0;
-     padding: 0;
-}
-
-.form-control:focus {
-     border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
-}
-
-.navbar-form input {
-     border: none !important;
-}
-
-.badge {
-     font-weight: 500;
-}
-
-blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
-}
-
-button {
-     border: 0;
-     margin: 0;
-     padding: 0;
-     cursor: pointer;
-}
-
-.full {
-     float: left;
-     width: 100%;
-}
-
-.layout_padding {
-     padding-top: 90px;
-     padding-bottom: 0px;
-}
 i{
-    color: var(--destaques-color);
+   
   
 }
 
@@ -245,14 +106,16 @@ header{
      padding: 10px;
      z-index: 999;
      width: 100%;
-     background-color:var(--hero-color);
+     background-color:black;
+     display: flex;
+     align-items: center;
      
      
  }
  
  .btn-header{
      border: none;
-     font-size: 1.1rem;
+     font-size: 1em;
      background-color: #c6c9e827;
      color: #c6c9e8;
      border-radius: 8px;
@@ -266,7 +129,7 @@ header{
  .btn-header-registrar{
      border: none;
      border-radius: 8px;
-     font-size: 1.1rem;
+     font-size: 1em;
      background-color: #e68b03;
      transition: 0.6s;
 
@@ -275,11 +138,7 @@ header{
      background-color: #e68b037b;
      color: #0c0b09;
  }
- .btn-header-in {
-     background-color: var(--destaques-color);
-     color: #111928;
-     transition: 0.8s;
- }
+ 
  .menu{
      display: none;
      gap: 20px;
@@ -287,17 +146,9 @@ header{
      
  
  }
- .menu li a {
-     text-decoration: none;
-     font-size: 1.2em;
-     color:var(--link-color);
-     transition: 0.6s;
- }
+
  
- .menu li a:hover{
-     color: #f2910090;
  
- }
  .logo{
     display: none;
  }
@@ -357,9 +208,6 @@ header{
      display: flex;
      align-items: center;
      gap: 10px;
-     background-color: #c6c9e80c;
-    
- 
  }
  .menu-mobile ul li a{
      font-style: none;
@@ -370,7 +218,7 @@ header{
  }
  
  .menu-email p{
-     color: #f29200;
+     color: white;
  
  }
  
@@ -384,7 +232,7 @@ header{
      width: 28px;
      height: 3px;
      margin: 5px auto;
-     background-color: #f29200;
+     background-color: white;
      transition: 0.5s;
  }
  .hamburguer.ativo .linha:nth-child(2){
@@ -464,7 +312,7 @@ header{
 .banner_section{
      width: 100%;
      float: left;
-     background-color: #202753;
+     background-color:black;
      height: auto;
      padding-top: 90px;
 }
@@ -472,18 +320,17 @@ header{
 .book_now {
     width: 70%;
     float: right;
-    background-color: var(--destaques-color);
     border-radius: 10px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.174);
     height: auto;
+    background-color: #49bcfe;
     padding: 10px;
 }
 
 .book_text{
      width: 100%;
      float: left;
-     font-size: 40px;
-     color: var(--backgraud-color);
+ color: #000;
      text-align: center;
 }
 .call_text{
@@ -512,7 +359,8 @@ header{
     float: left;
     padding-top: 0;
     padding-bottom: 30px;
-    background-color: #fefefe;
+   background-color: #9cdbff9e;
+   border-radius: 10px;
     margin-top: 20px;
 }
 
@@ -527,15 +375,14 @@ header{
 }
 
 .email-bt {
-    background: #e1e1e1;
-    border-bottom: 1px solid #fffcf4;
+    background: #04cafc0b;
+    border-bottom: 1px solid #e8e8e8;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     color: #000 !important;
     width: 95%;
     height: 30px;
-    font-size: 20px;
     padding: 20px 20px 20px 20px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -547,7 +394,7 @@ header{
 .send_bt a{
     width: 22%;
     float: right;
-    background-color:var(--destaques-color);
+    background-color:rgb(0, 145, 255);
     color: #fefefe;
     text-align: center;
     padding: 10px 0px;
@@ -556,16 +403,11 @@ header{
     margin-right: 30px;
 }
 
-.send_bt a{ color: #fefefe; }
-.send_bt a:hover {
-    color: #000;
-    background:  #f2910053 ;
-}
 
 .taxis_section {
     width: 100%;
     float: left;
-    background-color: var(--hero-color);
+    background-color:black;
     height: auto;
     margin-top: 90px;
     padding-bottom: 50px;
@@ -575,7 +417,7 @@ header{
      width: 100%;
      float: left;
      text-align: center;
-     font-size: 50px;
+     font-size: 40px;
      color: #fefefe;
      font-weight: bold;
 }
@@ -588,9 +430,10 @@ header{
 .taxi_main{
      width: 100%;
      float: left;
-     background-color: #fefefe;
+     background-color: #49bcfe;
+     border-radius: 10px;
      height: auto;
-    margin-top: 70px;
+     margin-top: 70px;
 }
 .round_1 {
     width: 21%;
