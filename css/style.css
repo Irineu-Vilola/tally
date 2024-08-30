@@ -224,13 +224,15 @@ header{
      
      display: flex;
      align-items: center;
-     gap: 10px;
+     justify-content: left;
+     gap: 20px;
+     width: 120px;
+     
  }
  .menu-mobile ul li a{
      font-style: none;
      text-decoration: none;
      display: block;
-     font-family: "Oleo Script", system-ui;
     
  }
  
