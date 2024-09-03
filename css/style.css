@@ -23,13 +23,12 @@
 /* Cores globais do site. As alterações das cores fazem-se aqui */
 :root { 
 
-    --cor-destaque: #96b6dd; /* Cor de fundo da página */
-    --destaque-hover:#b0c8e6 ; /* Cor para os links*/
-    --hero-color:#c9dbee; /* cores de Fundos para sessão hero */
-    --link-color:#e3edf7; /* cor para relçar as cores do site */
-    --para-color: black;/* cor da letra dos paragrafos */
-    --bg-color:#fcffff; /* cor para as letras e para grafos */ 
-    --paragrafo-color: #BF4904; /* Cor para os pagrafos e textos longos*/
+    --cor-destaque:; /* Cor de fundo da página */
+    --destaque-hover:; /* Cor para os links*/
+    --hero-color:; /* cores de Fundos para sessão hero */
+    --link-color:; /* cor para relçar as cores do site */
+    --para-color:;/* cor da letra dos paragrafos */
+    --bg-color:; /* cor para as letras e para grafos */ 
 
 
 
