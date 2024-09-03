@@ -3,9 +3,7 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Tapestry&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 
@@ -52,8 +50,6 @@ html {
 }
 
 body {
-     background-color: var(--bg-color);
-     font-size: 14px;
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
@@ -75,12 +71,26 @@ button:focus {
 a {
      color:#0c0b09;
      text-decoration: none;
-     font-size: 1.3em;
+     font-size: 1em;
      outline: none !important;
-     transition: 0.6s;
+     transition: 0.3s;
+     font-family: "Arimo", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
 }
 
 a:hover{
+    color:#49bcfe;
+     text-decoration: none;
+     font-size: 1em;
+     outline: none !important;
+     font-family: "Arimo", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+    
+
 
 }
 
@@ -107,46 +117,73 @@ p{
 
 header{
      height: 80px;
-     padding: 10px;
      z-index: 999;
      width: 100%;
-     background-color:var(--bg-color);
+     background-color:white;
      display: flex;
      align-items: center;
+     border-bottom: 1px solid black;
+    
      
      
  }
- 
- 
- .menu{
-     display: none;
-     gap: 20px;
-     
-     
- 
+ .content-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
  }
-
- 
- .dropdown-menu{
-    background-color:var(--bg-color);
-    padding: 2px;
-
- }
- .dropdown-menu li{
+ .logo{
+    font-size: 1.5em;
     display: flex;
     align-items: center;
-
+   
  }
+ .logo span{
+    color: red;
+    font-size: 1em;
 
- .dropdown-menu li a{
-    transition: 0.6s;
-    font-size:1em;
- }
-
- .dropdown-menu li a:hover{
-    color:#0c0b09;
  }
  
+ .menu{
+     gap: 20px;
+     margin: auto auto;
+     
+     
+ 
+ }
+
+ .btn-div{
+    display: flex;
+    align-items:start;
+    gap: 10px;
+    
+
+ }
+ .btn-1{
+    border: 1px solid black;
+    transition: .3s;
+    border-radius: 8px;
+    
+ }
+ .btn-1:hover{
+    box-shadow: 2px 3px 4px black;
+ }
+ .btn-2{
+    background-color: #0c0b09;
+    color: white;
+    transition: .3s;
+    border-radius: 8px;
+
+ }
+ .btn-2:hover{
+    box-shadow: 2px 5px 8px black;
+    border: 1px solid white;
+    color: white;
+
+ }
+
+
     
  
  
