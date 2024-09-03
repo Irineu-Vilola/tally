@@ -97,9 +97,9 @@ img {
      outline: 0;
 }
 h1,h2, h3, h4,h5,h6{
-    font-family: "Tapestry", serif;
     font-weight: 400;
     font-style: normal;
+    font-family: "Quicksand", sans-serif;
 }
 i{
     color: var(--cor-destaque);
@@ -392,13 +392,14 @@ header{
     padding-bottom: 50px;
 }
 
-.our_text{
+.section-titulos{
      width: 100%;
      float: left;
      text-align: center;
      font-size: 40px;
      color: #0c0b09;
      font-weight: bold;
+     margin: 20px 0px;
 }
 
 .taxis_section_2 {
@@ -471,11 +472,7 @@ input.email-bt::placeholder {
      border-bottom: 1px solid #000;
 }
 
-.ride_main {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .ride_section_2{
      width: 100%;
