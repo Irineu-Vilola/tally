@@ -74,18 +74,15 @@ button:focus {
 
 a {
      color:#0c0b09;
-     font-size: 1.2rem;
      text-decoration: none;
+     font-size: 1.3em;
      outline: none !important;
      transition: 0.6s;
-     font-family: "Tapestry", serif;
 }
 
 a:hover{
-    color: var(--cor-destaque);
+
 }
-
-
 
 img {
      max-width: 100%;
@@ -96,21 +93,14 @@ img {
      outline: 0;
 }
 h1,h2, h3, h4,h5,h6{
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Quicksand", sans-serif;
+    
 }
 i{
-    color: var(--cor-destaque);
    
   
 }
 p{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--para-color);
+    
 }
 
 /*---------------------------------------------------------------------                             Header ---------------------------------------------------------------------*/
@@ -127,31 +117,6 @@ header{
      
  }
  
- .btn-header{
-     border: none;
-     font-size: 1em;
-     background-color: #49bcfe;
-     color:#0c0b09;
-     border-radius: 8px;
-     transition: 0.6s;
- }
- .btn-header:hover{
-     background-color:#96b6dd;
-     color: #0c0b09;
-    
- }
- .btn-header-registrar{
-     border: none;
-     border-radius: 8px;
-     font-size: 1em;
-     background-color: var(--cor-destaque);
-     transition: 0.6s;
-
- }
- .btn-header-registrar:hover{
-     background-color:#2027534b;
-     color: #0c0b09;
- }
  
  .menu{
      display: none;
@@ -162,10 +127,6 @@ header{
  }
 
  
- 
- .logo{
-    display: none;
- }
  .dropdown-menu{
     background-color:var(--bg-color);
     padding: 2px;
@@ -178,7 +139,6 @@ header{
  }
 
  .dropdown-menu li a{
-    color: #0c0b09;
     transition: 0.6s;
     font-size:1em;
  }
