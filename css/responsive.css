@@ -48,16 +48,7 @@
   }
   
   
-  /* Modal */
-  dialog {
-      
-    border: none;
-    width: 350px;
-    margin: auto;
-    border-radius: 24px;
-    padding: 20px;
-    background-color: #202753;
-  }
+  
   
   
       
@@ -106,18 +97,26 @@
   }
   
   
-  /* Modal */
-  dialog {
-      
-    border: none;
-    width: 350px;
-    margin: auto;
-    border-radius: 24px;
-    padding: 20px;
-    background-color: #202753;
-  }
-     
+  /* Formulários de login */
+  .form-conteudo{
+    display: block;
+    justify-content: center;
+  } 
     
+  .form-loim {
+    background-color: rgba(0, 0, 0, 0.101);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.093);
+    
+      display: flex;
+      width: 400px;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
       
         
   }
@@ -164,7 +163,26 @@
   
   
   
- 
+ /* Formulários de login */
+ .form-conteudo{
+    display: block;
+    justify-content: center;
+  }
+
+  .form-loim {
+    background-color: rgba(0, 0, 0, 0.101);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.093);
+    
+      display: flex;
+      width: 400px;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
     
      
     
