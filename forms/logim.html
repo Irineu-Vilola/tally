@@ -6,26 +6,16 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastro de Motorista</title>
     <style>
 
         
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
+       
 
-        body{
-            background-image: url('../images/bg-form.jpg');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-            
-        }
         .capa{
-            background-color: rgba(0, 0, 0, 0.666);
+           
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -36,10 +26,10 @@
         }
       
         .form-loim {
-          
-            background-color: rgba(0, 89, 255, 0.092);
+        
             backdrop-filter: blur(10px);
             border-radius: 10px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.289);
           
             display: flex;
             width: 350px;
@@ -49,8 +39,18 @@
             flex-direction: column;
             align-items: center;
         }
+
         .form-loim div{
           width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .form-input{
+          padding: 6px;
+          border-radius: 8px;
+          border: none;
+          background-color: #49bcfe20;
+
         }
 
         .entar-btn{
@@ -59,95 +59,102 @@
          
 
         }
+        .form-conteudo{
+          display: none;
+        }
 
         .form-logim a{
           text-decoration: none;
-          color: white;
+          color:red;
 
         }
 
         
-        .usur-img img{
-            display: flex;
-            align-items: center;
-            background-color:white;
-            border-radius: 50%;
-            border: 5PX SOLID rgba(13, 0, 255, 0.718);
-            margin: auto;
-            width: 60px;
-            height: 60px;
+        .bi-person-circle{
+          font-size: 3.5em;
+          text-align: center;
         }
-
     </style>
 </head>
 <body>
 
-
-
       <!-- Preloader -->
    <div id="preloader"></div>
+
+   <header>
+    <div class="container ">
+
+      <div class="d-flex align-items-center  justify-content-between ">
+        <div>
+          <h1 class="logo">logo</h1>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="#">Não tem uma conta</a>
+          <button class="btn btn-2">Criar uma contar</button>
+
+        </div>
+
+      </div>
+
+    </div>
+   </header>
    
 
    <div class="capa">
-       <div class="container d-flex">
+       <div class="container">
            
-           <form class=" form-loim m-auto gap-3 needs-validation" novalidate>
-            <div class="d-flex align-items-center justify-content-end" >
-              <a href="../index.html"><i class="fs-3 bi bi-x-lg"></i></a>
-          </div>
+           <div class="row col-lg-10 m-auto mt-3">
 
-             <div class="" >
-                
-
-                 <div class="usur-img"><img src="../images/car.png" alt=""></div>
-                 <div class="d-flex align-items-center justify-content-center">
-                  <h1 class="tex-aline-center">Login</h1>
+            <div class="col-md-6 d-flex justify-content-center my-4 form-conteudo">
+              <div>
+                <h1>Entre na sua conta Tally Travel</h1>
+                <h5 class="my-4">Entre na sua conta Tally travel com seu endereço de e-mail e senha.</h5>
               </div>
-             </div>
-               
 
-               <div class="">
-                 <label for="peso" class="form-label">Email</label>
-       
-                 <input type="email" class="form-control" id="peso" name="peso" placeholder="Email" required>
-                 <div class="invalid-feedback">
-                   Email Incorrecto
-                 </div>
-               </div>
-               
 
-              
-               
-               <div >
-                 <label for="peso" class="form-label">Senha</label>
-       
-                 <input type="password" class="form-control" id="peso" name="peso" min="0" placeholder="Senha" required>
-                 <div class="invalid-feedback">
-                   Senha incorrecta.
-                 </div>
-               </div>
-       
-               
-       
-       
-               <div class="">
-                 
-                      <spam>Esqueceu a palavra passe? <a href="#">clica aqui</a></spam>
- 
+            </div>
+             <div class="col-md-6">
+               <form class=" form-loim m-auto gap-3 needs-validation" novalidate>
                 
+                 <div class="" >
+               
+                     <div class="usur-img "><i class="bi bi-person-circle"></i></div>
+                     <div class="d-flex align-items-center justify-content-center">
+                      <h3 class="tex-aline-center">Login</h3>
+                  </div>
+                 </div>
+               
+                   <div class="">
+                     <label for="peso" class="form-label">Email</label>
+                     <input type="email" class="form-input"  placeholder="Email" required>
+                     
+                   </div>
+               
+               
+               
+                   <div >
+                     <label for="peso" class="form-label">Senha</label>
+                     <input type="password" class="form-input"  placeholder="Senha" required>
+                     
+                   </div>
+               
+                   <div class="">
+               
+                          <spam>Esqueceu a palavra passe? <a href="#">clica aqui</a></spam>
+               
+                   </div>
+                   <div class="entar-btn" >
+                      <input class="btn btn-2 " type="submit" value="Entrar">
+                    </div>
+                    <div class="d-flex justify-content-center">
+               
+                      <spam>Se não tem uma conta <a href="#">clica aqui</a></spam>
+               
                </div>
-               <div class="entar-btn" >
-                  <input class="btn btn-primary " type="submit" value="Entrar">
-                </div>
-
-                <div class="d-flex justify-content-center">
-                 
-                  <spam>Se não tem uma conta <a href="#">clica aqui</a></spam>
-
-            
+                 </form>
+             </div>
            </div>
-       
-             </form>
        </div>
    </div>
 
