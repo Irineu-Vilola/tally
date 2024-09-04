@@ -300,7 +300,6 @@ header{
     border-radius: 10px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.174);
     height: auto;
-    background-color:var(--hero-color);
     padding: 10px;
 }
 
@@ -334,28 +333,24 @@ header{
 .contact_bg {
     width: 100%;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding-top: 0;
     padding-bottom: 30px;
     border-radius: 10px;
     margin-top: 20px;
+    
 }
 
-.request_text {
-    width: 100%;
-    float: left;
-    font-size: 20px;
-    color: #000;
-    border-bottom: 0px solid#c6d0d5;
-    padding-top: 20PX;
-    text-align: center;
-}
+
 
 .app-item{
     text-align: center;
-    margin-top: 50px;
-   padding: 20px;
-   border-radius: 10px;
-   background-color: #49bcfe;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
     
 
 }
@@ -365,6 +360,10 @@ header{
 }
 .app-item a img:hover{
     padding:2px;
+}
+
+.hero-paragrafo{
+
 }
 
 
