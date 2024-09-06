@@ -469,40 +469,21 @@ header{
 .cabe_text {
     width: 100%;
     float: left;
-    font-size: 24px;
-    color: #2b3436;
+    font-size: 2em;
+    color: #49bcfe;
     margin-top: 20px;
 }
 
 .long_text{
      width: 100%;
      text-align: justify;
+     font-size: 20px;
      float: left;
      color: #0c0b09;
      margin-left: 0px;
 }
 
 
-
-
-
-.secure_text {
-    width: 100%;
-    float: left;
-    font-size: 24px;
-    color: #2b3436;
-    margin-top: 20px;
-    text-align: right;
-}
-
-.long_text_2{
-     width: 100%;
-     float: left;
-     font-size: 16px;
-     color: #2b3436;
-     margin-left: 0px;
-     text-align: right;
-}
 
 .book_bt_2 a{
     width: 20%;
@@ -661,7 +642,7 @@ header{
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  
+  font-size: 14px;
   position: relative;
   border-radius: 6px;
   position: relative;
