@@ -114,7 +114,6 @@ i{
 p{
     font-family: "Arimo", sans-serif;
     font-weight: 200;
-    font-size: .8em;
    
     
 }
@@ -567,9 +566,6 @@ header{
 # Testimonials
 --------------------------------------------------------------*/
 
-
-
-#testimonials{}
 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
