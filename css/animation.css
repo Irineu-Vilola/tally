@@ -17,7 +17,7 @@
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #ffffff;
-    border-color: var(--destaques-color);
+    border-color: #49bcfe;
     border-top: none;
     border-radius: 50%;
     width: 60px;

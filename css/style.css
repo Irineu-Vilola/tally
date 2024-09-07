@@ -495,11 +495,7 @@ header{
     margin-top: 30px;
 }
 
-.book_bt_2 a{ color:#fefefe; }
-.book_bt_2 a:hover {
-    color: #fff;
-    background: #000;
-}
+
 
 .location_sectin {
     width: 100%;
@@ -540,6 +536,11 @@ header{
 .image-icon {
     width: 100%;
     float: left;
+    display: flex;
+    gap: 20px;
+}
+.image-icon i{
+    font-size: 1em;
 }
 
 .fb_text {
@@ -548,8 +549,7 @@ header{
     padding-left: 16px;
 }
 
-.fb_text a{ color: #fffcf4; }
-.fb_text a:hover{ color: #fecf3d; }
+
 
 
 .adderess_text {
