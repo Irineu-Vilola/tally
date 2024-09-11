@@ -12,8 +12,6 @@
 
 
 
-@import url(slick.css);
-@import url(jquery-ui.css);
 
 
 
@@ -71,8 +69,6 @@ button:focus {
 a {
      color:#0c0b09;
      text-decoration: none;
-     font-size: 1em;
-     outline: none !important;
      transition: 0.5s;
      font-family: "Arimo", sans-serif;
      font-optical-sizing: auto;
@@ -362,10 +358,6 @@ header{
     padding:2px;
 }
 
-.hero-paragrafo{
-
-}
-
 
 .taxis_section {
     width: 100%;
@@ -392,11 +384,10 @@ header{
 
 .taxi_main{
      width: 100%;
-     float: left;
      background-color:black ;
     
      border-radius: 10px;
-     height: auto;
+     
      margin-top: 70px;
 }
 .round_1 {
@@ -653,11 +644,11 @@ header{
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  border: 1px solid #ffc107;
+  border: 1px solid #49bcfe;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc107;
+  background-color: #49bcfe;
 }
 
 
