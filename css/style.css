@@ -118,6 +118,7 @@ p{
 
 header{
      height: 80px;
+     padding-top:20px;
      z-index: 999;
      width: 100%;
      background-color:white;
@@ -246,7 +247,7 @@ header{
      height: 3px;
      margin: 5px auto;
      background-color: #0c0b09;
-     transition: 0.5s;
+     transition: 0.3s;
  }
  .hamburguer.ativo .linha:nth-child(2){
      opacity: 0;

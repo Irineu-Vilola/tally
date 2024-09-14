@@ -3,129 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/animation.css">
-    <title>Agendamento de Viagem - Tally Travel</title>
-    <style>
-
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            
-        }
-
-        body{
-          color: white;
-            background-image: url('../images/bg-form.jpg');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center center;
-            
-        }
-        .capa{
-            background-color: rgba(0, 0, 0, 0.416);
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-        }
-        option{
-            color: black;
-        }
-      
-        form{
-            display: flex;
-            justify-content: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-
-      <!-- Preloader -->
+       <!-- Preloader -->
    <div id="preloader"></div>
-   
 
-   <div class="capa">
-       <div class="container d-flex">
-           
-           <form class="row col-8 m-auto g-4 needs-validation" novalidate>
-               <div class="col-8 d-flex align-items-center justify-content-between" >
-                   <h1>Agendamento de Viagens</h1>
-                   <a href="../index.html">Fechar</a>
-               </div>
+   <header>
 
-               <div class="col-md-8">
-                <label for="data_recepcao" class="form-label">Data da Viagem</label>
-                <div class="input-group has-validation">
-                  <input type="date" class="form-control" id="data_recepcao" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Defina uma data de Viagem.
+    <div class="container ">
+
+      <div class="d-flex align-items-center  justify-content-between ">
+        <div class="logo"><h4><a href="../index.html">Tally-<span>Travel</span></h4></a></div>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="cadastros.html"><button class="btn btn-2">Criar uma contar</button></a>
+
+        </div>
+
+      </div>
+
+    </div>
+   </header>
+
+    <div class="container m-auto col-xl-10 col-xxl-11 px-4 py-5 h-100">
+        <div class="row align-items-center g-lg-5 py-4">
+          <div class="col-lg-3 text-center text-lg-start">
+            <h1 class="display-5 fw-bold  mb-3">Agendamento de Viagens</h1>
+            <p class="col-lg-10 fs-5">Agenda as sua viagem de forma segura e rápida agendando com a Tally-Travel  </p>
+          </div>
+          <div class="mx-auto col-lg-7">
+            
+            
+            <form class="p-4 p-md-4 row col-10 m-auto g-4 needs-validation" novalidate>
+
+              <div class="form-floating ">
+
+                <i class="bi bi-book-fill"></i>
+                  
+                </div>
+                <h3 class="text-center mb-3">Agendamento de Viagens</h3>
+                
+
+                  <div class="col-md-7">
+                   
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-input" id="data_recepcao" aria-describedby="inputGroupPrepend" placeholder="Nome da carga" required>
+                      <div class="invalid-feedback">
+                        Carga não definida.
+                      </div>
+                    
+                    </div>
                   </div>
-                </div>
-              </div>
-               
-               <div class="col-md-8">
-                 <label for="tipo_de_carga" class="form-label">Tua Localizção</label>
-                 <select class="form-select" id="validationCustom04" required>
-                   <option selected disabled value="">...</option>
-                   <option>Malanje</option>
-                   <option>Luanda</option>
-                 </select>
-                 <div class="invalid-feedback">
-                   Selecione a Tua Cidade.
-                 </div>
-               </div>
+                  <div class="col-md-5">
+                   
+                    <div class="input-group has-validation">
+                      <input type="number" class="form-input" id="data_recepcao" aria-describedby="inputGroupPrepend" placeholder="Peso" required>
+                      <div class="invalid-feedback">
+                        Peso não definido.
+                      </div>
+                    
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                   
+                    <div class="input-group has-validation">
+                      <input type="text" class="form-input" id="data_recepcao" aria-describedby="inputGroupPrepend" placeholder="Nome da carga" required>
+                      <div class="invalid-feedback">
+                        Defina uma data de Viagem.
+                      </div>
+                    
+                    </div>
+                  </div>
 
-               <div class="col-md-8">
-                <label for="tipo_de_carga" class="form-label">Destino</label>
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">...</option>
-                  <option>Malanje</option>
-                  <option>Luanda</option>
-                </select>
-                <div class="invalid-feedback">
-                  Selecione o teu destino.
-                </div>
-              </div>
+                  <div class="col-md-5">
+                   
+                    <div class="input-group has-validation">
+                      <input type="date" class="form-input" id="data_recepcao" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Defina uma data de Viagem.
+                      </div>
+                    
+                    </div>
+                  </div>
 
-              <div class="col-md-8">
-                <label for="tipo_de_carga" class="form-label">Tipo de Viagem</label>
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">...</option>
-                  <option>Ainda não definido</option>
-                  <option>Ainda não definido</option>
-                </select>
-                <div class="invalid-feedback">
-                  Selecione o teu destino.
-                </div>
-              </div>
-               
-       
+
+                  
+                  
               
-       
-       
-               <div class="col-8">
-                 <div class="form-check">
-                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                   <label class="form-check-label" for="invalidCheck">
-                     Agree to terms and conditions
-                   </label>
-                   <div class="invalid-feedback">
-                     You must agree before submitting.
-                   </div>
-                 </div>
-               </div>
-               <div class="col-8">
-                   <button class="btn btn-primary" type="submit">Submit form</button>
-                 </div>
-       
-             </form>
-       </div>
-   </div>
-    <script src="../js/form.js"></script>
-    <script src="../js/main.js"></script>
+              
+              <button class="w-100 btn btn-lg btn-2" type="submit">Agendar</button>
+              <hr class="my-4">
+              <div class="d-flex gap-3 justify-content-center">
+                <i class="fs-3 bi bi-facebook"></i>
+                <i class="fs-3 bi bi-whatsapp"></i>
+                <i class=" fs-3 bi bi-instagram"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="../js/form.js"></script>
+      <script src="../js/main.js"></script>
 </body>
 </html>
